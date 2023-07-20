@@ -11,4 +11,5 @@ categories = ["development-tools::debugging"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
+[dev-dependencies]
+postcard = { version = "1.0.6", default-features = false }
