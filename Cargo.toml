@@ -5,6 +5,7 @@ authors = ["Valentine Briese <valentinegb@icloud.com>"]
 edition = "2021"
 description = "An anti-boilerplate package for errors that wrap errors."
 repository = "https://github.com/valentinegb/wrapping_error"
+license = "MIT"
 keywords = ["errors", "utility", "macro", "enum"]
 categories = ["development-tools::debugging"]
 
