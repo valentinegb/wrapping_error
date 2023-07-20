@@ -1,7 +1,12 @@
 [package]
 name = "wrapping_error"
 version = "0.1.0"
+authors = ["Valentine Briese <valentinegb@icloud.com>"]
 edition = "2021"
+description = "An anti-boilerplate package for errors that wrap errors."
+repository = "https://github.com/valentinegb/wrapping_error"
+keywords = ["errors", "utility", "macro", "enum"]
+categories = ["development-tools::debugging"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
