@@ -1,14 +1,34 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+macro_rules! wrapping_error {
+    ($vis:vis $enum:ident { $($variant:ident($error:path)),+$(,)? }) => {
+        use std::{fmt, error};
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+        #[derive(Debug)]
+        $vis enum $enum {
+            $($variant($error),)+
+        }
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
+        impl fmt::Display for $enum {
+            fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+                match *self {
+                    err => err.fmt(f),
+                }
+            }
+        }
+
+        impl error::Error for $enum {
+            fn source(&self) -> Option<&(dyn error::Error + 'static)> {
+                match *self {
+                    ref err => Some(err),
+                }
+            }
+        }
+
+        $(
+            impl From<$error> for $enum {
+                fn from(err: $error) -> Self {
+                    Self::$variant(err)
+                }
+            }
+        )+
+    };
 }
