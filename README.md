@@ -1,5 +1,7 @@
 # wrapping_error
 
+[![Rust](https://github.com/valentinegb/wrapping_error/actions/workflows/rust.yml/badge.svg)](https://github.com/valentinegb/wrapping_error/actions/workflows/rust.yml)
+
 An anti-boilerplate package for errors that wrap errors.
 
 This package only exports one item: the [`wrapping_error`](https://docs.rs/wrapping_error/latest/wrapping_error/macro.wrapping_error.html) macro.
