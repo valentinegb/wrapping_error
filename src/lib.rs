@@ -1,6 +1,7 @@
 //! An anti-boilerplate crate for errors that wrap errors.
 //!
-//! This crate only exports one item: the [`wrapping_error`] macro. See that for documentation.
+//! This crate only exports one item: the [`wrapping_error`] macro.
+//! See that for documentation.
 
 /// Creates an error that wraps other errors.
 ///
