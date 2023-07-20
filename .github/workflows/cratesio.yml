@@ -3,7 +3,7 @@ name: crates.io
 on:
   release:
     types:
-      - released
+      - published
 
 env:
   CARGO_TERM_COLOR: always
