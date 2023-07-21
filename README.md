@@ -1,6 +1,8 @@
 # wrapping_error
 
 [![Rust](https://github.com/valentinegb/wrapping_error/actions/workflows/rust.yml/badge.svg)](https://github.com/valentinegb/wrapping_error/actions/workflows/rust.yml)
+[![crates.io](https://img.shields.io/crates/v/wrapping_error)](https://crates.io/crates/wrapping_error)
+[![Docs.rs](https://img.shields.io/docsrs/wrapping_error/latest?logo=docsdotrs)](https://docs.rs/wrapping_error)
 
 An anti-boilerplate package for errors that wrap errors.
 
